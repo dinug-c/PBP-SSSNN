@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <script>
+      function validateForm() {
+        const x = document.forms["formLogin"]["username"];
+        const y = document.forms["formLogin"]["password"];
+        if (x.checkValidity() == false || y.checkValidity() == false) {
+          document.getElementById("errUsername").innerHTML =
+            x.validationMessage;
+          document.getElementById("errPassword").innerHTML =
+            y.validationMessage;
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form name="formLogin">
+      <label for="username">Email</label>
+      <input
+        required="required"
+        maxlength="30"
+        type="email"
+        name="username"
+        id="username"
+      />
+      <span id="errUsername"></span>
+      <br />
+      <label for="password">Password</label>
+      <input
+        required="required"
+        maxlength="30"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <span id="errPassword"></span>
+      <br />
+      <input type="submit" onclick="validateForm()" value="Login" />
+    </form>
+  </body>
+</html>

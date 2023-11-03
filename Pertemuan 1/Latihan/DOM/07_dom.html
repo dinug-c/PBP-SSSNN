@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <ul id="list_script">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+    <p>Add and Remove Element List</p>
+    <button id="btn01" type="button" onclick="addList()">Add List</button>
+    <button id="btn02" type="button" onclick="removeList()">Remove List</button>
+
+    <script>
+      function addList() {
+        const list = document.createElement("li");
+        const text = document.createTextNode("PHP");
+        list.appendChild(text);
+        document.getElementById("list_script").appendChild(list);
+      }
+      function removeList() {
+        const list = document.getElementById("list_script");
+        list.removeChild(list.childNodes[1]);
+      }
+    </script>
+  </body>
+</html>

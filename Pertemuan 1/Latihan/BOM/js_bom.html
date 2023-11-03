@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <button onclick="alert('Welcome!!!')">Alert</button>
+    <button onclick="close_confirm()">Confirm</button>
+    <button onclick="prompt_name()">Prompt</button>
+    <div id="username"></div>
+
+    <script>
+      function close_confirm() {
+        if (confirm("Are you sure?")) {
+          window.close();
+        }
+      }
+      function prompt_name() {
+        let name = prompt("What is your name?");
+        document.getElementById("username").innerHTML = name;
+      }
+    </script>
+  </body>
+</html>

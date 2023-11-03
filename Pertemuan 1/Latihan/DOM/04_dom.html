@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <h2>Belajar Javascript HTML DOM</h2>
+    <p>Akses elemen menggunakan object collections</p>
+
+    <form id="form_mhs" action="">
+      Nama: <input type="text" name="nama" id="nama" value="Nahida" /><br />
+      Kota Lahir:
+      <input
+        type="text"
+        name="kota_lahir"
+        id="kota_lahir"
+        value="Sumeru"
+      /><br />
+      Program Studi:
+      <input type="text" name="prodi" id="prodi" value="Informatika" /><br />
+      Fakultas:
+      <input type="text" name="fakultas" id="fakultas" value="FSM" /><br />
+    </form>
+
+    <p>Isi setiap elemen form_mhs adalah sebagai berikut</p>
+    <p id="demo"></p>
+
+    <script>
+      const x = document.forms["form_mhs"];
+      let txt = "";
+      let i;
+      for (i = 0; i < x.length; i++) {
+        txt = txt + x.elements[i].value + "<br>";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    </script>
+  </body>
+</html>

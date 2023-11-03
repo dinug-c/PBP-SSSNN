@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">pbp7</string>
+    <string name="label_button">Hitung Volume</string>
+    <string name="label_luas">Hitung Luas Permukaan</string>
+    <string name="label_keliling">Hitung Keliling</string>
+    <string name="label_hasil">Hasil</string>
+    <string name="label_tinggi">Tinggi</string>
+    <string name="label_panjang">Panjang</string>
+    <string name="label_lebar">Lebar</string>
+</resources>

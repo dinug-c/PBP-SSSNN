@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <h2>DOM Navigation</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+    <p>Semangat</p>
+
+    <script>
+      const x = document.getElementsByTagName("ul")[0];
+
+      const a = x.parentNode;
+      document.write("parentNode : " + a + "<br>");
+
+      const b = x.firstChild;
+      document.write("firstChild : " + b + "<br>");
+
+      const c = x.childNodes[1];
+      document.write("childNodes : " + c.innerHTML + "<br>");
+
+      const d = x.previousElementSibling;
+      document.write("previousElementSibling : " + d.innerHTML + "<br>");
+
+      const e = x.nextElementSibling;
+      document.write("nextElementSibling : " + e + "<br>");
+    </script>
+  </body>
+</html>

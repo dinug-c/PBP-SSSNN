@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      mark = 82;
+      if (mark >= 80) {
+        document.getElementById("result").innerHTML = "Pass";
+      } else {
+        document.getElementById("result").innerHTML = "Fail";
+      }
+
+      if (mark >= 80) {
+        document.getElementById("result").innerHTML = "Excellent";
+      } else if (mark >= 70 && mark < 80) {
+        document.getElementById("result").innerHTML = "Good";
+      } else {
+        document.getElementById("result").innerHTML = "Fail";
+      }
+    </script>
+  </body>
+</html>

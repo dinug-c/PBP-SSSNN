@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <h2>HTML DOM Event</h2>
+    <p>Menambahkan event melalui addEventListener</p>
+
+    <form>
+      <input type="text" id="nama" />
+    </form>
+    <button id="btn_alert">Alert</button>
+
+    <script>
+      document.getElementById("btn_alert").addEventListener("click", alertName);
+      function alertName() {
+        alert("Welcome " + document.getElementById("nama").value);
+      }
+    </script>
+  </body>
+</html>
